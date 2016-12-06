@@ -4,8 +4,6 @@ const path = require('path');
 const assert = require('assert');
 const postcss = require('postcss');
 
-const powerCustomProperties = require('..');
-
 describe("Fixtures", () => {
 
   it("works with simple expressions", () => {
