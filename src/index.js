@@ -4,7 +4,7 @@ const valueParser = require('postcss-value-parser');
 
 const Operation = require('./operation');
 
-function colorModPolyfill(options = {}) {
+module.exports = postcss.plugin('postcss-color-mod', (options = {}) => {
   return css => {
 
     // Color Mods -- parsing and deps graph building
@@ -29,9 +29,4 @@ function colorModPolyfill(options = {}) {
       });
     });
   };
-}
-
-// Exporting
-
-module.exports = postcss.plugin(
-  'postcss-color-mod', powerCustomProperties);
+});
