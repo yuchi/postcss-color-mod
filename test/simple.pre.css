@@ -1,0 +1,5 @@
+
+:root {
+  color: color-mod(red s(- 10%));
+  color: color-mod(#f00 h(+180deg) s(10%));
+}
